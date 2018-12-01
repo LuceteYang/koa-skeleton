@@ -1,0 +1,27 @@
+{
+  "name": "koa-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node app",
+    "dev": "./node_modules/.bin/nodemon app",
+    "prd": "pm2 start app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^5.2.1",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.14",
+    "nodemailer": "^4.7.0",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.5.1"
+  }
+}
