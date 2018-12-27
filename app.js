@@ -33,10 +33,9 @@ app.use(
 // logger
 app.use(logger.logMiddleWare);
 
-const port = process.env.PORT || 4000; // default port 4000
 
 // routes
-router.use("/api", api.routes());
+router.use("/", api.routes());
 app.use(router.routes()).use(router.allowedMethods());
 
 // app.use(serve(path.resolve(__dirname, '../../client/build/')));
@@ -48,8 +47,8 @@ app.on("error", (err, ctx) => {
   logger.error("server error", err);
   logger.responseLog(ctx);
 });
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   logger.info(
-    `${process.env.name || "devApiServer"} is listening to port ${port}`
+    `${process.env.name || "devApiServer"} is listening to port ${process.env.PORT}`
   );
 });
