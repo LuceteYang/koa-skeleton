@@ -18,7 +18,7 @@ $ git clone https://github.com/LuceteYang/koa-skeleton.git your-project-name
 $ cd your-project-name
 $ rm -rf .git && git init
 $ cp .env.copy .env
-$ mv README.md README_TEMP.md && echo "# your-project-name" >> REAMDE.md
+$ mv README.md README_TEMP.md && echo "# your-project-name" >> README.md
 ```
 
 ```zsh
@@ -88,9 +88,9 @@ $ npm install
 $ npm start
 ```
 >check  
->http://localhost:4000/  
->http://localhost:4000/string  
->http://localhost:4000/json?username=yang&email=abc@def.com&password=111111   
+>http://localhost:4000/api  
+>http://localhost:4000/api/string  
+>http://localhost:4000/api/json?username=yang&email=abc@def.com&password=111111   
 
 => {"msg":["Successfully connected to mongodb"],"level":"info","message":"info"} then db connect
 

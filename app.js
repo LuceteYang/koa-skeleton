@@ -35,7 +35,7 @@ app.use(logger.logMiddleWare);
 
 
 // routes
-router.use("/", api.routes());
+router.use("/api", api.routes());
 app.use(router.routes()).use(router.allowedMethods());
 
 // app.use(serve(path.resolve(__dirname, '../../client/build/')));
